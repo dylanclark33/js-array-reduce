@@ -84,6 +84,13 @@ Examples:
 */
 
 function partition(arr, callback) {
+  return arr.reduce(function (acc, next, idx) {
+    acc[idx][key] = value;
+    return acc;
+  }, arr);
+}
+
+function partition(arr, cb) {
   return arr.reduce(
     function (acc, next) {
       if (cb(next)) {
